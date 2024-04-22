@@ -3,7 +3,7 @@
 ## Bundle 1
 
 # Exercise 1
-
+```
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises
 $ git init
 Initialized empty Git repository in C:/Users/HP/Desktop/Personal/The Gym/Git Exercises/.git/
@@ -250,7 +250,7 @@ $ git reset --help
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
 $ git reset --hard
 HEAD is now at 13b170d Added 2 new pages; about and home page
-
+```
 
 ## Bundle 2
 # Exercise 1
