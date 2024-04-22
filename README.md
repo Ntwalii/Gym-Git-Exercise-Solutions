@@ -1064,3 +1064,48 @@ branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
 
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/home-page-redesign)
 ```
+# Bundle 4
+
+##Exercise 1
+
+```
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git remote add git-copy https://github.com/Ntwalii/Git-Exercise-repo-2.git
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git commit -a -m "Changes to homepage"
+[main 0a71f10] Changes to homepage
+ 1 file changed, 1 insertion(+)
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 322 bytes | 322.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Ntwalii/git-exercises.git
+   f4ea61e..0a71f10  main -> main
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git push git-copy
+Enumerating objects: 69, done.
+Counting objects: 100% (69/69), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (65/65), done.
+Writing objects: 100% (69/69), 11.85 KiB | 1.08 MiB/s, done.
+Total 69 (delta 32), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (32/32), done.
+To https://github.com/Ntwalii/Git-Exercise-repo-2.git
+ * [new branch]      main -> main
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$
+```
