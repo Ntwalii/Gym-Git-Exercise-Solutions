@@ -1231,3 +1231,62 @@ To https://github.com/Ntwalii/git-cafe-exercise.git
    d1d3f9c..a2b0b5f  main -> main
 PS C:\Users\HP\Desktop\Personal\The Gym\git-cafe-exercise>
 ```
+## Bundle 6
+
+# Exercise 1
+
+```
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git branch new_feature
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ ls
+README.md  bat/  css/  images/  index-1.html  index-2.html  index-3.html  index-4.html  index.html  js/
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ touch menu.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git add .
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git checkout new_feature
+Switched to branch 'new_feature'
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (new_feature)
+$ git add .
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (new_feature)
+$ git commit -m "Edited menu"
+[new_feature 7c4fd33] Edited menu
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (new_feature)
+$ git push
+fatal: The current branch new_feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin new_feature
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (new_feature)
+$ git push --set-upstream origin new_feature
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 312 bytes | 312.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'new_feature' on GitHub by visiting:
+remote:      https://github.com/Ntwalii/git-cafe-exercise/pull/new/new_feature
+remote:
+To https://github.com/Ntwalii/git-cafe-exercise.git
+ * [new branch]      new_feature -> new_feature
+branch 'new_feature' set up to track 'origin/new_feature'.
+
+```
