@@ -298,4 +298,119 @@ branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/bundle-2)
 $
 
+# Exercise 2
+```
+$ git checkout -b ft/service-redesign
+Switched to a new branch 'ft/service-redesign'
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git add .
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git commit -m "Services.html edit"
+[ft/service-redesign 3e0dd1a] Services.html edit
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git push --set-upstream origin ft/service-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Ntwalii/git-exercises.git
+   f758e79..fae53c6  ft/service-redesign -> ft/service-redesign
+branch 'ft/service-redesign' set up to track 'origin/ft/service-redesign'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git diff main
+diff --git a/services.html b/services.html
+new file mode 100644
+index 0000000..b2a1cb7
+--- /dev/null
++++ b/services.html
+@@ -0,0 +1,10 @@
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++    <h1>Initial change 2.1</h1>
++</body>
++</html>
+\ No newline at end of file
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git merge ft/service-redesign
+Already up to date.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git merge main
+CONFLICT (modify/delete): services.html deleted in main and modified in HEAD.  Version HEAD of services.html left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign|MERGING)
+$ git diff main
+diff --git a/services.html b/services.html
+new file mode 100644
+index 0000000..b2a1cb7
+--- /dev/null
++++ b/services.html
+@@ -0,0 +1,10 @@
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Document</title>
++</head>
++<body>
++    <h1>Initial change 2.1</h1>
++</body>
++</html>
+\ No newline at end of file
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign|MERGING)
+$ git merge main
+fatal: You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you merge.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign|MERGING)
+$ git commit "Merge complete"
+fatal: cannot do a partial commit during a merge.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign|MERGING)
+$ git commit -m "Merge complete"
+[ft/service-redesign e61dd7b] Merge complete
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git push
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 213 bytes | 213.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ntwalii/git-exercises.git
+   fae53c6..e61dd7b  ft/service-redesign -> ft/service-redesign
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$
+```
 
