@@ -413,4 +413,443 @@ To https://github.com/Ntwalii/git-exercises.git
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
 $
 ```
+# Exercise 2
 
+```
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/service-redesign)
+$ git checkout -b team-page
+Switched to a new branch 'team-page'
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (team-page)
+$ ls
+README.md  about.html  home.html  services.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (team-page)
+$ touch team.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (team-page)
+$ git add .
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (team-page)
+$ git commit -m "Team page initialization"
+[team-page f1606d5] Team page initialization
+ 1 file changed, 10 insertions(+)
+ create mode 100644 team.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (team-page)
+$ git push
+fatal: The current branch team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (team-page)
+$ git push --set-upstream origin team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 413 bytes | 413.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'team-page' on GitHub by visiting:
+remote:      https://github.com/Ntwalii/git-exercises/pull/new/team-page
+remote:
+To https://github.com/Ntwalii/git-exercises.git
+ * [new branch]      team-page -> team-page
+branch 'team-page' set up to track 'origin/team-page'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (team-page)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git branch ft/contact-page
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git checkout ft/team-page
+error: pathspec 'ft/team-page' did not match any file(s) known to git
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git checkout ft/team-page
+error: pathspec 'ft/team-page' did not match any file(s) known to git
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git checkout ft/team-page
+error: pathspec 'ft/team-page' did not match any file(s) known to git
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git checkout ft/team-page
+error: pathspec 'ft/team-page' did not match any file(s) known to git
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/service-redesign
+* main
+  team-page
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
+$ git checkout team-page
+Switched to branch 'team-page'
+Your branch is up to date with 'origin/team-page'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (team-page)
+$ git branch -M "ft/team-page"
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/team-page)
+$ git log
+commit f1606d5181c8f2f5bd8b564ef596409419339a12 (HEAD -> ft/team-page, origin/team-page)
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:47:24 2024 +0200
+
+    Team page initialization
+
+commit e61dd7bb7811247b495df07d0ccd68e1167f1d9a (origin/ft/service-redesign, ft/service-redesign)
+Merge: fae53c6 efdfa29
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:35:27 2024 +0200
+
+    Merge complete
+
+commit efdfa29bb0aa4ff2464dd9b4fac1fd1074bfcb0d (origin/main, main, ft/contact-page)
+Merge: 3044aa5 a94eabb
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:30:24 2024 +0200
+
+    Merge branch 'main' of https://github.com/Ntwalii/git-exercises
+
+commit 3044aa581a021410eeb58522620b87ee295afbfc
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:30:05 2024 +0200
+
+    Deleting services.html
+
+commit a94eabb9f1942d540522f548450ed8d7a10e1b58
+Merge: bcf88cb ccd3743
+Author: Aubin Ntwali <119161688+Ntwalii@users.noreply.github.com>
+Date:   Mon Apr 22 19:28:30 2024 +0200
+
+    Merge pull request #4 from Ntwalii/ft/bundle-2
+
+    Ft/bundle 2
+
+commit fae53c6caa5770e800da46d322c82388a9b2e82b
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:27:51 2024 +0200
+
+    New push
+
+commit f758e796756e4ea27aee1113e25dd0795aea7621
+Merge: 4db239d b69ad46
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:26:53 2024 +0200
+
+    Merged
+
+:
+commit f1606d5181c8f2f5bd8b564ef596409419339a12 (HEAD -> ft/team-page, origin/team-page)
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:47:24 2024 +0200
+
+    Team page initialization
+
+commit e61dd7bb7811247b495df07d0ccd68e1167f1d9a (origin/ft/service-redesign, ft/service-redesign)
+Merge: fae53c6 efdfa29
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:35:27 2024 +0200
+
+    Merge complete
+
+commit efdfa29bb0aa4ff2464dd9b4fac1fd1074bfcb0d (origin/main, main, ft/contact-page)
+Merge: 3044aa5 a94eabb
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:30:24 2024 +0200
+
+    Merge branch 'main' of https://github.com/Ntwalii/git-exercises
+
+commit 3044aa581a021410eeb58522620b87ee295afbfc
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:30:05 2024 +0200
+
+    Deleting services.html
+
+commit a94eabb9f1942d540522f548450ed8d7a10e1b58
+Merge: bcf88cb ccd3743
+Author: Aubin Ntwali <119161688+Ntwalii@users.noreply.github.com>
+Date:   Mon Apr 22 19:28:30 2024 +0200
+
+    Merge pull request #4 from Ntwalii/ft/bundle-2
+
+    Ft/bundle 2
+
+commit fae53c6caa5770e800da46d322c82388a9b2e82b
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:27:51 2024 +0200
+
+    New push
+
+commit f758e796756e4ea27aee1113e25dd0795aea7621
+Merge: 4db239d b69ad46
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 19:26:53 2024 +0200
+
+    Merged
+
+commit 4db239d0786f9787198401921dcd9cc2d46db698
+...skipping...
+
+commit e43c2bedc77ae52bee952f2e864842e3af4b5704
+Merge: efacc7c 4e21ed2
+Author: Gloria Umutoni <124312203+gloriaumutoni@users.noreply.github.com>
+Date:   Mon Apr 22 17:29:42 2024 +0200
+
+    Merge pull request #2 from Ntwalii/ft/service-redesign
+
+    Services page edit
+
+commit 4e21ed2529777cac0cd975de36c5271b8218bc23
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 17:15:56 2024 +0200
+
+    Services page edit
+
+commit efacc7ca109dc1dd684ad31d51a32e04602e8777
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 17:05:41 2024 +0200
+
+    Changes to services.html
+
+commit abfc6679f154960e9da1ac38f93b0eb1c8191a06
+Merge: 13b170d 77db5bf
+Author: IGIRANEZA Josue <88510074+IGIRANEZAJosue@users.noreply.github.com>
+Date:   Mon Apr 22 16:59:23 2024 +0200
+
+    Merge pull request #1 from Ntwalii/ft/bundle-2
+
+    Created a services.html
+
+commit 77db5bf47dbeac00888cb9012622e5aa87ee07bc
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 16:52:46 2024 +0200
+
+    Created a services.html
+
+commit 13b170d9e434a9eca42b3073aaea79ef6f03d551
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 16:31:53 2024 +0200
+
+    Added 2 new pages; about and home page
+
+commit 7ac1b36f92809b86f3b4706e829c759083d63473 (dev)
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 15:34:21 2024 +0200
+
+    Created a README
+
+commit e43c2bedc77ae52bee952f2e864842e3af4b5704
+Merge: efacc7c 4e21ed2
+Author: Gloria Umutoni <124312203+gloriaumutoni@users.noreply.github.com>
+Date:   Mon Apr 22 17:29:42 2024 +0200
+
+    Merge pull request #2 from Ntwalii/ft/service-redesign
+
+    Services page edit
+
+commit 4e21ed2529777cac0cd975de36c5271b8218bc23
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 17:15:56 2024 +0200
+
+    Services page edit
+
+commit efacc7ca109dc1dd684ad31d51a32e04602e8777
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 17:05:41 2024 +0200
+
+    Changes to services.html
+
+commit abfc6679f154960e9da1ac38f93b0eb1c8191a06
+Merge: 13b170d 77db5bf
+Author: IGIRANEZA Josue <88510074+IGIRANEZAJosue@users.noreply.github.com>
+Date:   Mon Apr 22 16:59:23 2024 +0200
+
+    Merge pull request #1 from Ntwalii/ft/bundle-2
+
+    Created a services.html
+
+commit 77db5bf47dbeac00888cb9012622e5aa87ee07bc
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 16:52:46 2024 +0200
+
+    Created a services.html
+
+commit 13b170d9e434a9eca42b3073aaea79ef6f03d551
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 16:31:53 2024 +0200
+
+    Added 2 new pages; about and home page
+
+commit 7ac1b36f92809b86f3b4706e829c759083d63473 (dev)
+Author: ntwalii <ntwaliaubin@gmail.com>
+Date:   Mon Apr 22 15:34:21 2024 +0200
+
+    Created a README
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/team-page)
+$ git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/contact-page)
+$ git cherry-pick ft/team-page
+[ft/contact-page 8128868] Team page initialization
+ Date: Mon Apr 22 19:47:24 2024 +0200
+ 1 file changed, 10 insertions(+)
+ create mode 100644 team.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/contact-page)
+$ ls
+README.md  about.html  home.html  team.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/contact-page)
+$ touch contact.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/contact-page)
+$ git add .
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/contact-page)
+$ git commit -m "Contact page initialization"
+[ft/contact-page ca639ca] Contact page initialization
+ 1 file changed, 10 insertions(+)
+ create mode 100644 contact.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/contact-page)
+$ git push
+fatal: The current branch ft/contact-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/contact-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/contact-page)
+$ git push --set-upstream origin ft/contact-page
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 673 bytes | 673.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'ft/contact-page' on GitHub by visiting:
+remote:      https://github.com/Ntwalii/git-exercises/pull/new/ft/contact-page
+remote:
+To https://github.com/Ntwalii/git-exercises.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+branch 'ft/contact-page' set up to track 'origin/ft/contact-page'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/contact-page)
+$ git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/faq-page)
+$ touch faq.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/faq-page)
+$ git add .
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/faq-page)
+$ git commit -m "Faq page init"
+[ft/faq-page ce84cf5] Faq page init
+ 1 file changed, 10 insertions(+)
+ create mode 100644 faq.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/faq-page)
+$ git push
+fatal: The current branch ft/faq-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/faq-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/faq-page)
+$ git push --set-upstream origin ft/faq-page
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 226 bytes | 226.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Ntwalii/git-exercises/pull/new/ft/faq-page
+remote:
+To https://github.com/Ntwalii/git-exercises.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/faq-page)
+$ git checkout -b ft/team-page
+fatal: a branch named 'ft/team-page' already exists
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/faq-page)
+$ git checkout ft/team-page
+Switched to branch 'ft/team-page'
+Your branch is up to date with 'origin/team-page'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/team-page)
+$ git revert f1606d5181c8f2f5bd8b564ef596409419339a12
+[ft/team-page 37d7e86] Revert "Team page initialization"
+ 1 file changed, 10 deletions(-)
+ delete mode 100644 team.html
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/team-page)
+$ git push
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+
+    git push origin HEAD:team-page
+
+To push to the branch of the same name on the remote, use
+
+    git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+
+To avoid automatically configuring upstream branches when their name
+doesn't match the local branch, see option 'simple' of branch.autoSetupMerge
+in 'git help config'.
+
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/team-page)
+$ git push origin HEAD
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 254 bytes | 254.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Ntwalii/git-exercises/pull/new/ft/team-page
+remote:
+To https://github.com/Ntwalii/git-exercises.git
+ * [new branch]      HEAD -> ft/team-page
+
+```
