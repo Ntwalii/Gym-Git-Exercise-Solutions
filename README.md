@@ -4,13 +4,6 @@
 
 # Exercise 1
 
-### Git Exercises
-
-## Bundle 1
-
-# Exercise 1
-
-
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises
 $ git init
 Initialized empty Git repository in C:/Users/HP/Desktop/Personal/The Gym/Git Exercises/.git/
