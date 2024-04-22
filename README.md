@@ -1210,3 +1210,24 @@ To https://github.com/Ntwalii/git-exercises.git
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
 $
 ```
+## Bundle 5
+
+# Exercise 2
+```
+PS C:\Users\HP\Desktop\Personal\The Gym\git-cafe-exercise> code ..
+PS C:\Users\HP\Desktop\Personal\The Gym\git-cafe-exercise> git add .
+PS C:\Users\HP\Desktop\Personal\The Gym\git-cafe-exercise> git commit -m "Restaurant added"
+[main a2b0b5f] Restaurant added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\HP\Desktop\Personal\The Gym\git-cafe-exercise> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 314 bytes | 157.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Ntwalii/git-cafe-exercise.git
+   d1d3f9c..a2b0b5f  main -> main
+PS C:\Users\HP\Desktop\Personal\The Gym\git-cafe-exercise>
+```
