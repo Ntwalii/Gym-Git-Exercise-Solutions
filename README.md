@@ -83,9 +83,9 @@ Switched to branch 'dev'
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (dev)
 $ git branch -d test
 Deleted branch test (was 7ac1b36).
-
+```
 # Exercise 2
-
+```
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
 $ vi home.html
 
@@ -255,7 +255,7 @@ HEAD is now at 13b170d Added 2 new pages; about and home page
 ## Bundle 2
 # Exercise 1
 
-
+```
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (main)
 $ git checkout -b ft/bundle-2
 Switched to a new branch 'ft/bundle-2'
@@ -297,7 +297,7 @@ branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 
 Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/Git Exercises (ft/bundle-2)
 $
-
+```
 # Exercise 2
 ```
 $ git checkout -b ft/service-redesign
