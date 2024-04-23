@@ -1290,3 +1290,112 @@ To https://github.com/Ntwalii/git-cafe-exercise.git
 branch 'new_feature' set up to track 'origin/new_feature'.
 
 ```
+# Exercise 2
+```
+$ git checkout -b "bug_fix"
+Switched to a new branch 'bug_fix'
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (bug_fix)
+$ git add .
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (bug_fix)
+$ git commit -m "contact title"
+[bug_fix 40eb5f1] contact title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (bug_fix)
+$ git push
+fatal: The current branch bug_fix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug_fix
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (bug_fix)
+$ git push --set-upstream origin bug_fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug_fix' on GitHub by visiting:
+remote:      https://github.com/Ntwalii/git-cafe-exercise/pull/new/bug_fix
+remote:
+To https://github.com/Ntwalii/git-cafe-exercise.git
+ * [new branch]      bug_fix -> bug_fix
+branch 'bug_fix' set up to track 'origin/bug_fix'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (bug_fix)
+$
+```
+
+# Exercise 3
+
+```
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (bug_fix)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git commit -a -m "CHanges phone number"
+[main b644a51] CHanges phone number
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git push
+To https://github.com/Ntwalii/git-cafe-exercise.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Ntwalii/git-cafe-exercise.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git pull
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.76 KiB | 225.00 KiB/s, done.
+From https://github.com/Ntwalii/git-cafe-exercise
+   a2b0b5f..f2d91e1  main       -> origin/main
+   40eb5f1..dff6ef2  bug_fix    -> origin/bug_fix
+Auto-merging index-4.html
+Merge made by the 'ort' strategy.
+ index-4.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git pull
+Already up to date.
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git commit -a -m "Changes phone number"
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Ntwali@DESKTOP-CP6B3NG MINGW64 ~/Desktop/Personal/The Gym/git-cafe-exercise (main)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 632 bytes | 632.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/Ntwalii/git-cafe-exercise.git
+   f2d91e1..9b6e8e5  main -> main
+
+```
